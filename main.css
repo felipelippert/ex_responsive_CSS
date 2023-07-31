@@ -5,6 +5,8 @@
     font-family: 'Roboto', sans-serif;
 }
 
+body {background-color: #eeeded;}
+
 .container {
     max-width: 1024px;
     width: 100%;
@@ -25,11 +27,8 @@ header {
     font-style: italic;
 }
 
-.menu {
-    
-}
-
 .menu li {
+    font-weight: bold;
     float: left;
     list-style: none;
     padding: 8px;
@@ -49,4 +48,37 @@ header {
 button {
     border: none;
     background-color: #3e7fe0;
+}
+
+.sobre img {
+    max-width: 300px;
+    max-height: 300px;
+    width: 100%;
+    margin-right: 24px;
+}
+
+.sobre {
+    display: flex;
+    margin-bottom: 54px;
+}
+
+h3 {
+    color: #3e7fe0;
+    font-style: italic;
+    margin-bottom: 40px;
+    padding: 0 0 12px;
+    border-bottom: 2px solid #3e7fe0;
+}
+
+.container-sobre {
+    padding: 0 12px ;
+}
+
+.produtos {
+    display: grid;
+    grid-template-columns: repeat(4, 24%);
+}
+
+.produto img {
+    max-width: 250px;
 }
