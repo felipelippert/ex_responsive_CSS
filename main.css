@@ -43,9 +43,8 @@ body {
 }
 
 .sobre img {
-    max-width: 300px;
-    max-height: 300px;
-    width: 100%;
+    width: 300px;
+    height: 300px;
     margin-right: 24px;
 }
 
@@ -77,10 +76,6 @@ h3 {
     row-gap: 5%;
 }
 
-.produto {
-    max-height: 434px;
-    height: 100%;
-}
 
 .produto img {
     max-width: 100%;
@@ -96,24 +91,75 @@ h2 {
 
 p {
     font-weight: 500;
+    margin-bottom: 14px;
+    margin-top: 14px;
 }
 
 button {
     border: none;
-    padding: 8px;
+    padding: 10px;
     border-radius: 4px;
     color: white;
     font-weight: bold;
     background-color: #3e7fe0;
     width: 100%;
     margin-top: 12px;
+    margin-bottom: 20px;
 }
 
-@media screen and (max-width:767px) {
+@media screen and (max-width: 1023px) {
+    .container {
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    .container-corpo {
+        max-width: 85%;
+    }
+
+    .sobre {
+        display: block;
+        justify-content: space-between;
+        align-items: ce;
+    }
+
+    .sobre img {
+        width:660px;
+        height: 600px;
+        margin-right: 0;
+        margin-bottom: 24px;
+    }
+
+    .img {
+        text-align: center;
+    }
+
+    .produtos {
+        display: grid;
+        grid-template-columns: repeat(2, 48%);
+        column-gap: 2%;
+        row-gap: 5%;
+    }
+}
+
+
+
+@media screen and (max-width: 767px) {
+    .container {
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    h1 {
+        margin-left: 14px;
+    }
+    
     .sobre {
         display: block;
     }
     .sobre img {
+        max-width: 300px;
+        max-height: 300px;
         margin-bottom: 20px;
         max-width: 100%;
     }
@@ -123,10 +169,15 @@ button {
     }
 
     .container-corpo {
-        max-width: 90%;
+        max-width: 85%;
     }
 
     .produtos {
         display: block;
     }
+    
+    button {
+        margin-bottom: 40px;
+    }
 }
+
