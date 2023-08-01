@@ -7,7 +7,7 @@
 
 body {background-color: #eeeded;}
 
-.container {
+.container-corpo {
     max-width: 1024px;
     width: 100%;
     margin: 0 auto;
@@ -45,11 +45,6 @@ header {
     color: white;
 }
 
-button {
-    border: none;
-    background-color: #3e7fe0;
-}
-
 .sobre img {
     max-width: 300px;
     max-height: 300px;
@@ -64,6 +59,8 @@ button {
 
 h3 {
     color: #3e7fe0;
+    font-weight: bolder;
+    font-size: 1.4em;
     font-style: italic;
     margin-bottom: 40px;
     padding: 0 0 12px;
@@ -77,8 +74,60 @@ h3 {
 .produtos {
     display: grid;
     grid-template-columns: repeat(4, 24%);
+    column-gap: 1.25%;
+    row-gap: 5%;
+}
+
+.produto {
+    max-height: 434px;
+    height: 100%;
 }
 
 .produto img {
-    max-width: 250px;
+    max-width: 100%;
+    margin-bottom: 40px;
+}
+
+h2 {
+    font-weight: bold;
+    font-size: 20px;
+    max-height: 48px;
+    margin-bottom: 12px;
+}
+
+p {
+    font-weight: 500;
+}
+
+button {
+    border: none;
+    padding: 8px;
+    border-radius: 4px;
+    color: white;
+    font-weight: bold;
+    background-color: #3e7fe0;
+    width: 100%;
+    margin-top: 12px;
+}
+
+@media screen and (max-width:767px) {
+    .sobre {
+        display: block;
+    }
+    .sobre img {
+        margin-bottom: 20px;
+        max-width: 100%;
+    }
+
+    .container-sobre {
+        padding: 0;
+    }
+
+    .container-corpo {
+        max-width: 90%;
+    }
+
+    .produtos {
+        display: block;
+    }
 }
