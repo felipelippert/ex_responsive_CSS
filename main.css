@@ -5,26 +5,23 @@
     font-family: 'Roboto', sans-serif;
 }
 
-body {background-color: #eeeded;}
+body {
+    background-color: #eeeded;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    background-color: #3e7fe0;
+    color: white;
+    margin-bottom: 56px;
+}
 
 .container-corpo {
     max-width: 1024px;
     width: 100%;
     margin: 0 auto;
-}
-
-header .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-header {
-    padding: 12px;
-    color: white;
-    background-color: #3e7fe0;
-    margin-bottom: 56px;
-    font-style: italic;
 }
 
 .menu li {
@@ -53,7 +50,8 @@ header {
 }
 
 .sobre {
-    display: flex;
+    display: grid;
+    grid-template-columns: 30% 70%;
     margin-bottom: 54px;
 }
 
@@ -69,6 +67,7 @@ h3 {
 
 .container-sobre {
     padding: 0 12px ;
+
 }
 
 .produtos {
